@@ -19,20 +19,23 @@
   <meta name="author" content="Greg Gu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="首先是最简单的一种: 下面3个tile 和中间的tile 是重复随机替换磁块.由于过于简单,不支持过渡,比如内转角. 第二种: 这个素材来自于RPGMaker,相较于第一种,多了块右上角(3,4,7,8),用来弥补不支持内转角的不足(1,2,4,6 重复与9,12,21,24 用于RPGMaker 磁贴缩略图)   下面实例素材来自与 LPC style.中间9块(粉红)是主体边缘,中间则是由右上">
+    <meta name="description" content="首先是最简单的一种: 下面3个tile 和中间的tile 是重复随机替换磁块.由于过于简单,不支持过渡,比如转角.  第二种: 这个素材来自于RPGMaker,相较于第一种,多了块右上角(3,4,7,8),用来弥补不支持转角的不足(1,2,4,6 重复与9,12,21,24 用于RPGMaker 磁贴缩略图)   下面实例素材来自与 LPC style.中间9块(粉红)是主体边缘,中间则是由右上角">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Auto Tiled 常见的几种BitMask">
 <meta property="og:url" content="http://example.com/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/index.html">
 <meta property="og:site_name" content="Greg&#39;s Blog">
-<meta property="og:description" content="首先是最简单的一种: 下面3个tile 和中间的tile 是重复随机替换磁块.由于过于简单,不支持过渡,比如内转角. 第二种: 这个素材来自于RPGMaker,相较于第一种,多了块右上角(3,4,7,8),用来弥补不支持内转角的不足(1,2,4,6 重复与9,12,21,24 用于RPGMaker 磁贴缩略图)   下面实例素材来自与 LPC style.中间9块(粉红)是主体边缘,中间则是由右上">
+<meta property="og:description" content="首先是最简单的一种: 下面3个tile 和中间的tile 是重复随机替换磁块.由于过于简单,不支持过渡,比如转角.  第二种: 这个素材来自于RPGMaker,相较于第一种,多了块右上角(3,4,7,8),用来弥补不支持转角的不足(1,2,4,6 重复与9,12,21,24 用于RPGMaker 磁贴缩略图)   下面实例素材来自与 LPC style.中间9块(粉红)是主体边缘,中间则是由右上角">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style1.PNG">
+<meta property="og:image" content="http://example.com/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style1_1.PNG">
 <meta property="og:image" content="http://example.com/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style4.PNG">
 <meta property="og:image" content="http://example.com/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style4_1.PNG">
+<meta property="og:image" content="http://example.com/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style4_2.PNG">
+<meta property="og:image" content="http://example.com/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style4_3.PNG">
 <meta property="og:image" content="http://example.com/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style2.PNG">
 <meta property="og:image" content="http://example.com/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style3.PNG">
 <meta property="article:published_time" content="2026-05-04T07:00:27.000Z">
-<meta property="article:modified_time" content="2026-05-04T10:06:16.334Z">
+<meta property="article:modified_time" content="2026-05-04T11:44:51.976Z">
 <meta property="article:author" content="Greg Gu">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style1.PNG">
@@ -331,7 +334,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          287 words
+          1.2k words
         
       </span>
     
@@ -342,7 +345,7 @@
         
         
         
-          3 mins
+          10 mins
         
       </span>
     
@@ -387,14 +390,22 @@
               <div class="markdown-body">
                 
                 <h1 id="首先是最简单的一种"><a href="#首先是最简单的一种" class="headerlink" title="首先是最简单的一种:"></a>首先是最简单的一种:</h1><p><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style1.PNG" srcset="/img/loading.gif" lazyload alt="本地图片"></p>
-<p>下面3个tile 和中间的tile 是重复随机替换磁块.由于过于简单,不支持过渡,比如内转角.</p>
+<p>下面3个tile 和中间的tile 是重复随机替换磁块.由于过于简单,不支持过渡,比如转角.</p>
+<p><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style1_1.PNG" srcset="/img/loading.gif" lazyload alt="本地图片"></p>
 <h1 id="第二种"><a href="#第二种" class="headerlink" title="第二种:"></a>第二种:</h1><p><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style4.PNG" srcset="/img/loading.gif" lazyload alt="本地图片"></p>
-<p>这个素材来自于RPGMaker,相较于第一种,多了块右上角(3,4,7,8),用来弥补不支持内转角的不足<br>(1,2,4,6 重复与9,12,21,24 用于RPGMaker 磁贴缩略图)  </p>
+<p>这个素材来自于RPGMaker,相较于第一种,多了块右上角(3,4,7,8),用来弥补不支持转角的不足<br>(1,2,4,6 重复与9,12,21,24 用于RPGMaker 磁贴缩略图)  </p>
 <p>下面实例素材来自与 LPC style.<br>中间9块(粉红)是主体边缘,中间则是由<br>右上角6块(粉红)重复随机替换磁块<br>下面4块(粉红)则是内转角<br><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style4_1.PNG" srcset="/img/loading.gif" lazyload alt="本地图片"></p>
-<h1 id="下面是最复杂的一种-47-tile-Autotile"><a href="#下面是最复杂的一种-47-tile-Autotile" class="headerlink" title="下面是最复杂的一种(47-tile Autotile):"></a>下面是最复杂的一种(47-tile Autotile):</h1><p><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style2.PNG" srcset="/img/loading.gif" lazyload alt="本地图片"></p>
+<p>使用效果:<br><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style4_2.PNG" srcset="/img/loading.gif" lazyload alt="本地图片"></p>
+<p>这种磁贴,由于缺少某些衔接,所以某些拐点仍然有缺陷:<br><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style4_3.PNG" srcset="/img/loading.gif" lazyload alt="本地图片"></p>
+<h1 id="下面是最复杂的一种-也支持最全的-47-tile-Autotile-Full-Bitmask"><a href="#下面是最复杂的一种-也支持最全的-47-tile-Autotile-Full-Bitmask" class="headerlink" title="下面是最复杂的一种,也支持最全的(47-tile Autotile Full Bitmask):"></a>下面是最复杂的一种,也支持最全的(47-tile Autotile Full Bitmask):</h1><p><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style2.PNG" srcset="/img/loading.gif" lazyload alt="本地图片"></p>
 <p>支持过渡</p>
-<p>下面是一种变体, 和上面类似(47-tile Autotile):<br><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style3.PNG" srcset="/img/loading.gif" lazyload alt="本地图片"></p>
+<p>下面是一种变体, 和上面类似(47-tile Autotile Full Bitmask):<br><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style3.PNG" srcset="/img/loading.gif" lazyload alt="本地图片"></p>
 <p>TODO 收集更多组合</p>
+<p>Godot Docs:<br><a target="_blank" rel="noopener" href="https://github.com/dandeliondino/godot-4-tileset-terrains-docs">https://github.com/dandeliondino/godot-4-tileset-terrains-docs</a>  </p>
+<p>Assemble 3x3 bitmask to 47 tile Format<br><a target="_blank" rel="noopener" href="https://github.com/HeartoLazor/autotile_generator">https://github.com/HeartoLazor/autotile_generator</a><br><a target="_blank" rel="noopener" href="https://github.com/pyrareae/GodotAutotileAssembler">https://github.com/pyrareae/GodotAutotileAssembler</a>  </p>
+<p>Bitmask Autotile Generator for Godot &amp; Unity(Turn a single tile into a seamless 47-tile Autotile bitmask set with a live testing canvas.)<br><a target="_blank" rel="noopener" href="https://jaconir.online/blogs/bitmask-autotile-guide">https://jaconir.online/blogs/bitmask-autotile-guide</a><br><a target="_blank" rel="noopener" href="https://jaconir.online/tools/bitmask-autotile-generator">https://jaconir.online/tools/bitmask-autotile-generator</a>  </p>
+<p>15-Tile Format(Wang) to 47 tile Format(Blob)<br><a target="_blank" rel="noopener" href="https://github.com/itsjavi/autotiler">https://github.com/itsjavi/autotiler</a><br><a target="_blank" rel="noopener" href="https://route1rodent.itch.io/autotiler">https://route1rodent.itch.io/autotiler</a>  </p>
+<p>Web Autotyler is an autotile conversion tool for turning small&#x2F;incomplete autotile tilesets into complete, fleshed-out ones.<br>It supports nine different input formats and three different output formats, and displays a preview.<br><a target="_blank" rel="noopener" href="https://github.com/wareya/webtyler?tab=readme-ov-file">https://github.com/wareya/webtyler?tab=readme-ov-file</a><br><a target="_blank" rel="noopener" href="https://wareya.github.io/webtyler/">https://wareya.github.io/webtyler/</a>  </p>
 
                 
               </div>
