@@ -8,7 +8,7 @@
     <link href="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/"/>
     <url>/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/</url>
     
-    <content type="html"><![CDATA[<h1 id="首先是最简单的一种"><a href="#首先是最简单的一种" class="headerlink" title="首先是最简单的一种:"></a>首先是最简单的一种:</h1><p><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style1.PNG" alt="本地图片"></p><p>下面3个tile 和中间的tile 是重复随机替换磁块</p><h1 id="再就是最复杂的一种"><a href="#再就是最复杂的一种" class="headerlink" title="再就是最复杂的一种:"></a>再就是最复杂的一种:</h1><p><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style2.PNG" alt="本地图片"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="首先是最简单的一种"><a href="#首先是最简单的一种" class="headerlink" title="首先是最简单的一种:"></a>首先是最简单的一种:</h1><p><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style1.PNG" alt="本地图片"></p><p>下面3个tile 和中间的tile 是重复随机替换磁块.由于过于简单,不支持过渡,比如内转角.</p><h1 id="再就是最复杂的一种-47-tile-Autotile"><a href="#再就是最复杂的一种-47-tile-Autotile" class="headerlink" title="再就是最复杂的一种(47-tile Autotile):"></a>再就是最复杂的一种(47-tile Autotile):</h1><p><img src="/2026/05/04/Auto-Tiled-%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8DBitMask/style2.PNG" alt="本地图片"></p><p>支持过渡</p><p>TODO 收集更多组合</p>]]></content>
     
     
     
